@@ -1,0 +1,18 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\antip\OneDrive\Desktop\Школа\Функциональная Схемотехника\Лаб 1\nand_test.net
+Start Time: Tue Oct 14 18:07:44 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+WARNING: Node x1:nc_01 is floating.
+
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.087 seconds.
+
+Files loaded:
+C:\Users\antip\OneDrive\Desktop\Школа\Функциональная Схемотехника\Лаб 1\nand_test.net
+C:\Users\antip\AppData\Local\LTspice\lib\cmp\standard.mos
+C:\Users\antip\OneDrive\Desktop\Школа\Функциональная Схемотехника\Лаб 1\90nm_bulk.txt
+
