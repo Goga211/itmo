@@ -1,0 +1,53 @@
+version: "3.8"
+services:
+  frontend:
+    image: goga21/lab4_frontend:final
+    container_name: frontend
+    ports:
+      - "3000:80"
+    restart: always
+
+  backend:
+    image: goga21/lab4_backend:final
+    container_name: backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/postgres
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1411
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+
+      ACCESS_SECRET: 4376jrgdfky3756ogkv326eggdgsfbke
+      REFRESH_SECRET: nly4754uyirkfb8446234yghsfdg3wug
+      ACCESS_LIFETIME: 432000000
+      REFRESH_LIFETIME: 2592000000
+
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
+
+      SPRING_LOGGING_LEVEL_ROOT: DEBUG
+      SPRING_LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_WEB: DEBUG
+      SPRING_LOGGING_LEVEL_ORG_SPRINGFRAMEWORK_SECURITY: DEBUG
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+      - redis
+    restart: always
+
+  db:
+    image: postgres:15-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1411
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    restart: always
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always

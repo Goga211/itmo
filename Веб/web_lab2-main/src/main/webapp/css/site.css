@@ -1,0 +1,131 @@
+
+header {
+    font-family: serif;
+    background: white;
+    margin-bottom: 3%; /* Отступ снизу */
+    font-size: 30px; /* Размер шрифта */
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+
+body {
+    background: url('images/bebebe.jpg') fixed;
+    background-size: contain;
+    margin: 0;
+    font-family: Calibri, serif;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+#coordinate-plate {
+    width: 12%;
+}
+
+#coordinate-plate svg {
+    border-radius: 25px;
+}
+
+
+#input {
+    width: 14%;
+}
+
+
+
+#legend-x, #legend-y, #legend-r {
+    border-radius: 10px;
+    background: white;
+    border-width: 0;
+}
+
+
+#legend-r legend {
+    background: white;
+    border-radius: 3px;
+    padding: 0;
+}
+#legend-x legend {
+    background: white;
+    border-radius: 3px;
+    padding: 0;
+}
+
+
+#input fieldset {
+    margin-bottom: 3%;
+}
+
+
+#submit {
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 17px;
+}
+
+
+#small {
+    font-size: 17px;
+}
+
+#result {
+    width: 30%;
+    vertical-align: top;
+}
+
+#result-table {
+    max-height: 450px; /* Фиксированная высота для таблицы */
+    overflow-y: auto; /* Вертикальная прокрутка */
+    display: block;
+    border: 2px grey;
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    border-radius: 13px;
+}
+
+
+#result th, #result td {
+    width: 100px; /* Ширина ячеек для корректной работы прокрутки */
+    text-align: center;
+}
+
+
+#error {
+    color: black;
+    background-color: white;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+
+#result-x {
+    width: 10%;
+}
+
+#result-y {
+    width: 12%;
+}
+
+#result-r {
+    width: 10%;
+}
+
+#result-time {
+    width: 24%;
+}
+
+#result-now {
+    width: 24%;
+}
+
+#result-answer {
+    width: 22%
+}
+
+

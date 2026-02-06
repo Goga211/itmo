@@ -1,0 +1,27 @@
+io - 
+cd ~/os-course/lab/vtsh/progs
+
+gcc io-load.c -DUSE_VTPC \
+  -I../lib \
+  -I../../vtpc/lib \
+  -L../../vtpc/build/lib -lvtpc \
+  -o io-load-vtpc
+
+
+io-ebpf - 
+cd ~/os-course/lab/vtsh/progs
+
+gcc io-load.c -DUSE_VTPC \
+  -I../lib \
+  -I../../vtpc/lib \
+  -L../../vtpc/build/lib -lvtpc_ebpf \
+  -Wl,-rpath,'$ORIGIN/../../vtpc/build/lib' \
+  -o io-load-ebpf
+
+vtpc -
+cd lab/vtpc
+rm -rf build
+mkdir build
+cd build
+cmake ..
+make -j$(nproc)

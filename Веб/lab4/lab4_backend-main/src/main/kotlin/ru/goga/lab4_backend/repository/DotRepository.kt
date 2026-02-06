@@ -1,0 +1,10 @@
+package ru.goga.lab4_backend.repository
+
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+import ru.goga.lab4_backend.dbobjects.Dot
+
+@Repository
+interface DotRepository: JpaRepository<Dot, Long> {
+    fun findDotsByUsername(username: String): List<Dot>
+}

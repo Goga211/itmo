@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/process-data.js"></script>
+    <title>Лабораторная работа 1</title>
+</head>
+
+<body>
+    <h1>Лабораторная работа 1</h1>
+    <div>
+        Антипин Григорий Викторович, P3332, вариант 470412
+    </div>
+
+    <div class="container">
+        <table id="table">
+            <thead>
+                <td colspan="3">
+                    <h3>Валидация введённых значений:</h3>
+                </td>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="5"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Выберите X:</td>
+                    <td colspan="3">
+                        <div class="radio-grid">
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="-3" id="X-3"> 
+                                <label for="X-3">-3</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="-2" id="X-2"> 
+                                <label for="X-2">-2</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="-1" id="X-1"> 
+                                <label for="X-1">-1</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="0" id="X0"> 
+                                <label for="X0">0</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="1" id="X1"> 
+                                <label for="X1">1</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="2" id="X2"> 
+                                <label for="X2">2</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="3" id="X3"> 
+                                <label for="X3">3</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="4" id="X4"> 
+                                <label for="X4">4</label>
+                            </div>
+                            <div class="radio-item">
+                                <input name="X-radio" type="radio" value="5" id="X5"> 
+                                <label for="X5">5</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Введите Y:</td>
+                    <td colspan="3"><input id="Y-input" type="text" placeholder="(от -3 до 5)"></td>
+                </tr>
+
+                <tr>
+                    <td>Выберите R:</td>
+                    <td colspan="3">
+                        <div class="button-grid">
+                            <input name="R-button" type="button" value="1" onclick="selectR(this.value, this)">
+                            <input name="R-button" type="button" value="1.5" onclick="selectR(this.value, this)">
+                            <input name="R-button" type="button" value="2" onclick="selectR(this.value, this)">
+                            <input name="R-button" type="button" value="2.5" onclick="selectR(this.value, this)">
+                            <input name="R-button" type="button" value="3" onclick="selectR(this.value, this)">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <button id="process-data">Check</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="graph-table">
+            <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" id="plate">
+
+                <!-- 2 четверть: четверть круга радиуса R/2 (R=100 => R/2=50) -->
+                <path d="M 250 250 L 200 250 A 50 50 0 0 1 250 200 Z" fill="blue"/>
+
+                <!-- 3 четверть: треугольник от -R/2 по X до -R/2 по Y -->
+                <polygon points="250,250 200,250 250,300" fill="blue"/>
+
+                <!-- 4 четверть: прямоугольник от -R/2 по Y до R по X -->
+                <rect x="250" y="250" width="100" height="50" fill="blue"/>
+
+                <text x="260" y="50" id="small" fill="white">Y</text>
+                <text x="450" y="240" id="small" fill="white">X</text>
+
+                <!-- Ось X -->
+                <line x1="50" y1="250" x2="450" y2="250" stroke="white" stroke-width="2"/>
+                <!-- Ось Y -->
+                <line x1="250" y1="50" x2="250" y2="450" stroke="white" stroke-width="2"/>
+        
+        
+        
+        
+                <!-- Стрелки -->
+                <polygon points="450,245 450,255 460,250" fill="white"/>
+                <polygon points="245,50 255,50 250,40" fill="white"/>
+        
+                <!-- Метки радиуса-->
+                <line x1="150" y1="245" x2="150" y2="255" stroke="white" stroke-width="2"/>
+                <line x1="350" y1="245" x2="350" y2="255" stroke="white" stroke-width="2"/>
+                <line x1="245" y1="150" x2="255" y2="150" stroke="white" stroke-width="2"/>
+                <line x1="245" y1="350" x2="255" y2="350" stroke="white" stroke-width="2"/>
+        
+                <text x="130" y="245" class="small" fill="white">-R</text>
+                <text x="353" y="245" class="small" fill="white">R</text>
+                <text x="260" y="354" class="small" fill="white">-R</text>
+                <text x="260" y="154" class="small" fill="white">R</text>
+        
+              </svg>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>X</td>
+                        <td>Y</td>
+                        <td>R</td>
+                        <td>Result</td>
+                        <td>Request Time</td>
+                        <td>Exec Time</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+
+
+#return {
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 17px;
+    color: black;
+    padding: 7px 7px;
+    align-items: center;
+
+}
+
+body {
+    background: url('images/bebebe.jpg') fixed;
+    background-size: contain;
+    margin: 0;
+    font-family: Calibri, serif;
+}
+
+
+header {
+    background: white;
+    margin-bottom: 3%;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+
+
+#result {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 13px;
+    margin-bottom: 3%;
+
+
+
+
+}

@@ -1,0 +1,15 @@
+
+State Machine - |fec_saylinx_board_top|display_mode
+Name display_mode.MODE_RESULT display_mode.MODE_SHOW_B display_mode.MODE_SHOW_A 
+display_mode.MODE_RESULT 0 0 0 
+display_mode.MODE_SHOW_A 1 0 1 
+display_mode.MODE_SHOW_B 1 1 0 
+
+State Machine - |fec_saylinx_board_top|func:func_inst|st
+Name st.S_DONE st.S_ADD st.S_A3 st.S_A2 st.S_AB st.S_IDLE 
+st.S_IDLE 0 0 0 0 0 0 
+st.S_AB 0 0 0 0 1 1 
+st.S_A2 0 0 0 1 0 1 
+st.S_A3 0 0 1 0 0 1 
+st.S_ADD 0 1 0 0 0 1 
+st.S_DONE 1 0 0 0 0 1 

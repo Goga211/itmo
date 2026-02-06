@@ -1,0 +1,36 @@
+
+State Machine - |fec_saylinx_board_top|display_mode
+Name display_mode.MODE_RESULT display_mode.MODE_SHOW_AB display_mode.MODE_SHOW_A 
+display_mode.MODE_RESULT 0 0 0 
+display_mode.MODE_SHOW_A 1 0 1 
+display_mode.MODE_SHOW_AB 1 1 0 
+
+State Machine - |fec_saylinx_board_top|morr_l2:calc_unit|state
+Name state.DONE_STATE state.CALC_MULT state.CALC_CUBRT state.IDLE 
+state.IDLE 0 0 0 0 
+state.CALC_CUBRT 0 0 1 1 
+state.CALC_MULT 0 1 0 1 
+state.DONE_STATE 1 0 0 1 
+
+State Machine - |fec_saylinx_board_top|morr_l2:calc_unit|root3:root3_inst|phase
+Name phase.00 phase.10 phase.01 
+phase.00 0 0 0 
+phase.01 1 0 1 
+phase.10 1 1 0 
+
+State Machine - |fec_saylinx_board_top|morr_l2:calc_unit|root3:root3_inst|state
+Name state.ST_IDLE state.ST_DONE state.ST_RUN 
+state.ST_IDLE 0 0 0 
+state.ST_RUN 1 0 1 
+state.ST_DONE 1 1 0 
+
+State Machine - |fec_saylinx_board_top|bist_wrapper:bist_inst|bist_ctrl:bist_ctrl_inst|state
+Name state.ST_TEST_DONE state.ST_TEST_NEXT state.ST_TEST_DELAY state.ST_TEST_CRC state.ST_TEST_WAIT state.ST_TEST_START state.ST_TEST_INIT state.ST_IDLE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 
+state.ST_TEST_INIT 0 0 0 0 0 0 1 1 
+state.ST_TEST_START 0 0 0 0 0 1 0 1 
+state.ST_TEST_WAIT 0 0 0 0 1 0 0 1 
+state.ST_TEST_CRC 0 0 0 1 0 0 0 1 
+state.ST_TEST_DELAY 0 0 1 0 0 0 0 1 
+state.ST_TEST_NEXT 0 1 0 0 0 0 0 1 
+state.ST_TEST_DONE 1 0 0 0 0 0 0 1 

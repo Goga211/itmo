@@ -1,0 +1,441 @@
+# Reading pref.tcl
+# do fec_saylinx_board_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/fec_saylinx_board_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:01 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/fec_saylinx_board_top.v 
+# -- Compiling module fec_saylinx_board_top
+# 
+# Top level modules:
+# 	fec_saylinx_board_top
+# End time: 17:27:01 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/morr_l2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/morr_l2.v 
+# -- Compiling module morr_l2
+# 
+# Top level modules:
+# 	morr_l2
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/root3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/root3.v 
+# -- Compiling module root3
+# 
+# Top level modules:
+# 	root3
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/mult.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/mult.v 
+# -- Compiling module mult
+# 
+# Top level modules:
+# 	mult
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/seg_display_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/seg_display_ctrl.v 
+# -- Compiling module seg_display_ctrl
+# 
+# Top level modules:
+# 	seg_display_ctrl
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/hex_to_7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/hex_to_7seg.v 
+# -- Compiling module hex_to_7seg
+# 
+# Top level modules:
+# 	hex_to_7seg
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/lfsr8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/lfsr8.v 
+# -- Compiling module lfsr8
+# 
+# Top level modules:
+# 	lfsr8
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/crc8.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/crc8.v 
+# -- Compiling module crc8
+# 
+# Top level modules:
+# 	crc8
+# End time: 17:27:02 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/debounce.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:02 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/debounce.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 17:27:03 on Dec 10,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/bist_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:03 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/bist_ctrl.v 
+# -- Compiling module bist_ctrl
+# 
+# Top level modules:
+# 	bist_ctrl
+# End time: 17:27:03 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/bist_wrapper.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:03 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/bist_wrapper.v 
+# -- Compiling module bist_wrapper
+# 
+# Top level modules:
+# 	bist_wrapper
+# End time: 17:27:03 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Schema/lab3 {C:/Schema/lab3/bist_demo_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:03 on Dec 10,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Schema/lab3" C:/Schema/lab3/bist_demo_tb.v 
+# -- Compiling module bist_demo_tb
+# 
+# Top level modules:
+# 	bist_demo_tb
+# End time: 17:27:03 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  bist_demo_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" bist_demo_tb 
+# Start time: 17:27:03 on Dec 10,2025
+# Loading work.bist_demo_tb
+# Loading work.fec_saylinx_board_top
+# Loading work.bist_wrapper
+# Loading work.debounce
+# Loading work.bist_ctrl
+# Loading work.lfsr8
+# Loading work.crc8
+# Loading work.morr_l2
+# Loading work.root3
+# Loading work.mult
+# Loading work.seg_display_ctrl
+# Loading work.hex_to_7seg
+# 
+# do C:/Schema/lab3/bist_demo.do
+# ============================================================
+# ModelSim DO file for BIST Demo - Lab 4
+# ============================================================
+# 
+# Close previous simulation if any
+# catch {quit -sim}
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# 0
+# 
+# Delete old work library
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# ============================================================
+# Compile all files
+# ============================================================
+# puts "=== Compiling modules ==="
+# === Compiling modules ===
+# 
+# vlog -work work C:/Schema/lab3/mult.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/mult.v 
+# -- Compiling module mult
+# 
+# Top level modules:
+# 	mult
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/root3.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/root3.v 
+# -- Compiling module root3
+# 
+# Top level modules:
+# 	root3
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/morr_l2.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/morr_l2.v 
+# -- Compiling module morr_l2
+# 
+# Top level modules:
+# 	morr_l2
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/hex_to_7seg.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/hex_to_7seg.v 
+# -- Compiling module hex_to_7seg
+# 
+# Top level modules:
+# 	hex_to_7seg
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/seg_display_ctrl.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/seg_display_ctrl.v 
+# -- Compiling module seg_display_ctrl
+# 
+# Top level modules:
+# 	seg_display_ctrl
+# End time: 17:27:08 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/lfsr8.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:08 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/lfsr8.v 
+# -- Compiling module lfsr8
+# 
+# Top level modules:
+# 	lfsr8
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/crc8.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/crc8.v 
+# -- Compiling module crc8
+# 
+# Top level modules:
+# 	crc8
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/debounce.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/debounce.v 
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/bist_ctrl.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/bist_ctrl.v 
+# -- Compiling module bist_ctrl
+# 
+# Top level modules:
+# 	bist_ctrl
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/bist_wrapper.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/bist_wrapper.v 
+# -- Compiling module bist_wrapper
+# 
+# Top level modules:
+# 	bist_wrapper
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/fec_saylinx_board_top.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/fec_saylinx_board_top.v 
+# -- Compiling module fec_saylinx_board_top
+# 
+# Top level modules:
+# 	fec_saylinx_board_top
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -work work C:/Schema/lab3/bist_demo_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:27:09 on Dec 10,2025
+# vlog -reportprogress 300 -work work C:/Schema/lab3/bist_demo_tb.v 
+# -- Compiling module bist_demo_tb
+# 
+# Top level modules:
+# 	bist_demo_tb
+# End time: 17:27:09 on Dec 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# puts "=== Compilation complete ==="
+# === Compilation complete ===
+# 
+# ============================================================
+# Start simulation
+# ============================================================
+# vsim -t 1ns -L work work.bist_demo_tb
+# vsim -t 1ns -L work work.bist_demo_tb 
+# Start time: 17:27:09 on Dec 10,2025
+# Loading work.bist_demo_tb
+# Loading work.fec_saylinx_board_top
+# Loading work.bist_wrapper
+# Loading work.debounce
+# Loading work.bist_ctrl
+# Loading work.lfsr8
+# Loading work.crc8
+# Loading work.morr_l2
+# Loading work.root3
+# Loading work.mult
+# Loading work.seg_display_ctrl
+# Loading work.hex_to_7seg
+# 
+# ============================================================
+# Add waves
+# ============================================================
+# add wave -divider "Clock & Reset"
+# add wave /bist_demo_tb/CLK
+# add wave /bist_demo_tb/RST_N
+# 
+# add wave -divider "Buttons"
+# add wave /bist_demo_tb/KEY2_N
+# add wave /bist_demo_tb/KEY3_N
+# 
+# add wave -divider "BIST Status"
+# add wave /bist_demo_tb/dut/test_mode
+# add wave /bist_demo_tb/dut/test_done
+# add wave -radix unsigned /bist_demo_tb/dut/test_count
+# add wave -radix unsigned /bist_demo_tb/dut/iteration
+# 
+# add wave -divider "LFSR Operands"
+# add wave -radix hexadecimal /bist_demo_tb/dut/a_to_dut
+# add wave -radix hexadecimal /bist_demo_tb/dut/b_to_dut
+# 
+# add wave -divider "DUT Result"
+# add wave -radix hexadecimal /bist_demo_tb/dut/dut_result
+# add wave /bist_demo_tb/dut/dut_done
+# 
+# add wave -divider "CRC8"
+# add wave -radix hexadecimal /bist_demo_tb/dut/crc_value
+# 
+# add wave -divider "LED"
+# add wave -radix binary /bist_demo_tb/LED
+# 
+# configure wave -namecolwidth 250
+# configure wave -valuecolwidth 100
+# 
+# ============================================================
+# Run simulation
+# ============================================================
+# puts ""
+# 
+# puts "============================================================"
+# ============================================================
+# puts "  Starting BIST simulation..."
+#   Starting BIST simulation...
+# puts "  This will take ~2 minutes (256 iterations with debounce)"
+#   This will take ~2 minutes (256 iterations with debounce)
+# puts "============================================================"
+# ============================================================
+# puts ""
+# 
+# 
+# run -all
+# 
+# ====================================================
+#   BIST TESTBENCH - Lab 4
+#   Testing: Built-In Self-Test for y = a * cbrt(b)
+# ====================================================
+# 
+# [190 ns] Reset released
+# 
+# --- TEST 1: Normal calculation ---
+# [20190 ns] GPIO: a=5, b=8, Expected: 5*cbrt(8) = 5*2 = 10
+# [40190 ns] KEY3 pressed (Calculate/Slow mode)
+# [124040190 ns] Result: 10
+# 
+# --- TEST 2: BIST mode (256 iterations) ---
+# [124040190 ns] Pressing KEY2 to enter BIST...
+# [124040190 ns] KEY2 pressed (BIST toggle)
+#   Iter   0: a=0xa4, b=0x5a, CRC=0x00
+#   Iter   1: a=0x49, b=0xb5, CRC=0x0c
+#   Iter   2: a=0x93, b=0x6b, CRC=0xd6
+#   Iter   3: a=0x27, b=0xd6, CRC=0x78
+#   Iter  32: a=0x4c, b=0x15, CRC=0x5a
+#   Iter  64: a=0x49, b=0xb5, CRC=0xab
+#   Iter  96: a=0x98, b=0x2b, CRC=0xe2
+#   Iter 128: a=0x93, b=0x6b, CRC=0x97
+#   Iter 160: a=0x30, b=0x57, CRC=0xc4
+#   Iter 192: a=0x27, b=0xd6, CRC=0x18
+#   Iter 224: a=0x61, b=0xae, CRC=0xb9
+#   Iter 254: a=0x93, b=0x6b, CRC=0x84
+#   Iter 255: a=0x27, b=0xd6, CRC=0x53
+# [148040190 ns] test_mode = 1
+# [148040190 ns] Waiting for 256 iterations...
+# 
+# ====================================================
+#   BIST COMPLETED!
+#   Iterations: 256
+#   Final CRC8: 0x0c
+#   Test count: 1
+# ====================================================
+# 
+# 
+# --- TEST 3: Exit and re-enter BIST ---
+# [148040190 ns] KEY2 pressed (BIST toggle)
+# [174040190 ns] KEY2 pressed (BIST toggle)
+# 
+# ====================================================
+#   SECOND BIST COMPLETED!
+#   Final CRC8: 0x0c (should be same)
+#   Test count: 1
+# ====================================================
+# 
+# 
+#   SIMULATION COMPLETED
+# 
+# ** Note: $stop    : C:/Schema/lab3/bist_demo_tb.v(151)
+#    Time: 200040190 ns  Iteration: 1  Instance: /bist_demo_tb
+# Break in Module bist_demo_tb at C:/Schema/lab3/bist_demo_tb.v line 151
+# 
+# wave zoom full
+# 0 ns
+# 210042200 ns
+# 
+# puts ""
+# 
+# puts "============================================================"
+# ============================================================
+# puts "  Simulation complete! Check:"
+#   Simulation complete! Check:
+# puts "  - iteration should reach 256"
+#   - iteration should reach 256
+# puts "  - crc_value shows final CRC"
+#   - crc_value shows final CRC
+# puts "============================================================"
+# ============================================================

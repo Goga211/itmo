@@ -1,0 +1,415 @@
+# Reading pref.tcl
+# do fec_saylinx_board_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/fec_saylinx_board_top.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:25 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/fec_saylinx_board_top.v 
+# -- Compiling module fec_saylinx_board_top
+# 
+# Top level modules:
+# 	fec_saylinx_board_top
+# End time: 15:47:25 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/seg_display_ctrl.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:25 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/seg_display_ctrl.v 
+# -- Compiling module seg_display_ctrl
+# 
+# Top level modules:
+# 	seg_display_ctrl
+# End time: 15:47:25 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/mult.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:25 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/mult.v 
+# -- Compiling module mult16x8
+# 
+# Top level modules:
+# 	mult16x8
+# End time: 15:47:25 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/hex_to_7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:26 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/hex_to_7seg.v 
+# -- Compiling module hex_to_7seg
+# 
+# Top level modules:
+# 	hex_to_7seg
+# End time: 15:47:26 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/func.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:26 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/func.v 
+# -- Compiling module func
+# 
+# Top level modules:
+# 	func
+# End time: 15:47:26 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/fec_saylinx_board_top_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:26 on Nov 19,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/lab3" C:/lab3/fec_saylinx_board_top_tb.v 
+# -- Compiling module fec_saylinx_board_top_tb
+# 
+# Top level modules:
+# 	fec_saylinx_board_top_tb
+# End time: 15:47:26 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  fec_saylinx_board_top
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" fec_saylinx_board_top 
+# Start time: 15:47:26 on Nov 19,2025
+# Loading work.fec_saylinx_board_top
+# Loading work.func
+# Loading work.mult16x8
+# Loading work.seg_display_ctrl
+# Loading work.hex_to_7seg
+# 
+# do C:/lab3/sim.do
+# ============================================================
+#   ModelSim DO file  Simulation of fec_saylinx_board_top_tb
+# ============================================================
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# 
+# 
+# ------------------------------------------------------------
+# ><?8;OF8O <>4C;59 (!."+ #")
+# ------------------------------------------------------------
+# vlog "C:/lab3/fec_saylinx_board_top.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:29 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/fec_saylinx_board_top.v 
+# -- Compiling module fec_saylinx_board_top
+# 
+# Top level modules:
+# 	fec_saylinx_board_top
+# End time: 15:47:29 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/lab3/seg_display_ctrl.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:29 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/seg_display_ctrl.v 
+# -- Compiling module seg_display_ctrl
+# 
+# Top level modules:
+# 	seg_display_ctrl
+# End time: 15:47:29 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/lab3/hex_to_7seg.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:29 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/hex_to_7seg.v 
+# -- Compiling module hex_to_7seg
+# 
+# Top level modules:
+# 	hex_to_7seg
+# End time: 15:47:29 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/lab3/mult.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:29 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/mult.v 
+# -- Compiling module mult16x8
+# 
+# Top level modules:
+# 	mult16x8
+# End time: 15:47:29 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/lab3/func.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:29 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/func.v 
+# -- Compiling module func
+# 
+# Top level modules:
+# 	func
+# End time: 15:47:29 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog "C:/lab3/fec_saylinx_board_top_tb.v"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:47:30 on Nov 19,2025
+# vlog -reportprogress 300 C:/lab3/fec_saylinx_board_top_tb.v 
+# -- Compiling module fec_saylinx_board_top_tb
+# 
+# Top level modules:
+# 	fec_saylinx_board_top_tb
+# End time: 15:47:30 on Nov 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# ------------------------------------------------------------
+# 0?CA: A8<C;OF88 TB
+# ------------------------------------------------------------
+# vsim -voptargs="+acc" work.fec_saylinx_board_top_tb
+# End time: 15:47:31 on Nov 19,2025, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.fec_saylinx_board_top_tb 
+# Start time: 15:47:31 on Nov 19,2025
+# Loading work.fec_saylinx_board_top_tb
+# Loading work.fec_saylinx_board_top
+# Loading work.func
+# Loading work.mult16x8
+# Loading work.seg_display_ctrl
+# Loading work.hex_to_7seg
+# 
+# 
+# ------------------------------------------------------------
+# WAVE signals
+# ------------------------------------------------------------
+# 
+# CLK + RESET + 3 BUTTONS
+# add wave -divider {CLOCK / RESET / BUTTONS}
+# add wave /fec_saylinx_board_top_tb/CLK
+# add wave /fec_saylinx_board_top_tb/RST_N
+# add wave /fec_saylinx_board_top_tb/KEY2_N
+# add wave /fec_saylinx_board_top_tb/KEY3_N
+# add wave /fec_saylinx_board_top_tb/KEY4_N
+# 
+# A and B (values fed to DUT)
+# add wave -divider {INPUT VALUES}
+# add wave -radix unsigned /fec_saylinx_board_top_tb/dut/a_value
+# add wave -radix unsigned /fec_saylinx_board_top_tb/dut/b_value
+# 
+# 7-seg
+# add wave -divider {SEG DISPLAY}
+# add wave -radix hex /fec_saylinx_board_top_tb/SEG_DATA
+# add wave /fec_saylinx_board_top_tb/SEG_SEL
+# 
+# Result register
+# add wave -divider {RESULT}
+# add wave -radix unsigned /fec_saylinx_board_top_tb/dut/last_result
+# 
+# Run simulation
+# run 200 ms
+# Time(ns)	LED	SEG_DATA	SEG_SEL	GPIO0[15:0]
+# 0	xx00	03	fe	ffff
+# 10000	0000	03	fe	ffff
+# 20190000	0000	03	fe	fcfa
+# 1000190000	0000	03	fd	fcfa
+# 2000190000	0000	03	fb	fcfa
+# 3000190000	0000	03	f7	fcfa
+# 4000190000	0000	03	ef	fcfa
+# 5000190000	0000	03	df	fcfa
+# 6000190000	0000	03	bf	fcfa
+# 7000190000	0000	03	7f	fcfa
+# 8000190000	0000	03	fe	fcfa
+# 9000190000	0000	03	fd	fcfa
+# 10000190000	0000	03	fb	fcfa
+# 11000190000	0000	03	f7	fcfa
+# 12000190000	0000	03	ef	fcfa
+# 13000190000	0000	03	df	fcfa
+# 14000190000	0000	03	bf	fcfa
+# 15000190000	0000	03	7f	fcfa
+# 16000190000	0000	03	fe	fcfa
+# 17000190000	0000	03	fd	fcfa
+# 18000190000	0000	03	fb	fcfa
+# 19000190000	0000	03	f7	fcfa
+# 20000190000	0000	03	ef	fcfa
+# 20020230000	0001	ff	ef	fcfa
+# 21000190000	0001	ff	df	fcfa
+# 22000190000	0001	ff	bf	fcfa
+# 23000190000	0001	ff	7f	fcfa
+# 24000190000	0001	49	fe	fcfa
+# 25000190000	0001	ff	fd	fcfa
+# 26000190000	0001	ff	fb	fcfa
+# 27000190000	0001	ff	f7	fcfa
+# 28000190000	0001	ff	ef	fcfa
+# 29000190000	0001	ff	df	fcfa
+# 30000190000	0001	ff	bf	fcfa
+# 31000190000	0001	ff	7f	fcfa
+# 32000190000	0001	49	fe	fcfa
+# 33000190000	0001	ff	fd	fcfa
+# 34000190000	0001	ff	fb	fcfa
+# 35000190000	0001	ff	f7	fcfa
+# 36000190000	0001	ff	ef	fcfa
+# 37000190000	0001	ff	df	fcfa
+# 38000190000	0001	ff	bf	fcfa
+# 39000190000	0001	ff	7f	fcfa
+# 40000190000	0001	49	fe	fcfa
+# 41000190000	0001	ff	fd	fcfa
+# 42000190000	0001	ff	fb	fcfa
+# 42020630000	0010	ff	fb	fcfa
+# 43000190000	0010	ff	f7	fcfa
+# 44000190000	0010	ff	ef	fcfa
+# 45000190000	0010	ff	df	fcfa
+# 46000190000	0010	ff	bf	fcfa
+# 47000190000	0010	ff	7f	fcfa
+# 48000190000	0010	0d	fe	fcfa
+# 49000190000	0010	ff	fd	fcfa
+# 50000190000	0010	ff	fb	fcfa
+# 51000190000	0010	ff	f7	fcfa
+# 52000190000	0010	ff	ef	fcfa
+# 53000190000	0010	ff	df	fcfa
+# 54000190000	0010	ff	bf	fcfa
+# 55000190000	0010	ff	7f	fcfa
+# 56000190000	0010	0d	fe	fcfa
+# 57000190000	0010	ff	fd	fcfa
+# 58000190000	0010	ff	fb	fcfa
+# 59000190000	0010	ff	f7	fcfa
+# 60000190000	0010	ff	ef	fcfa
+# 61000190000	0010	ff	df	fcfa
+# 62000190000	0010	ff	bf	fcfa
+# 63000190000	0010	ff	7f	fcfa
+# 64000190000	0010	0d	fe	fcfa
+# 64021030000	0000	0d	fe	fcfa
+# 64021050000	0100	03	fe	fcfa
+# 64021690000	1000	03	fe	fcfa
+# 64021710000	0000	03	fe	fcfa
+# 64021730000	0000	63	fe	fcfa
+# 65000190000	0000	01	fd	fcfa
+# 66000190000	0000	03	fb	fcfa
+# 67000190000	0000	03	f7	fcfa
+# 68000190000	0000	03	ef	fcfa
+# 69000190000	0000	03	df	fcfa
+# 70000190000	0000	03	bf	fcfa
+# 71000190000	0000	03	7f	fcfa
+# 72000190000	0000	63	fe	fcfa
+# 73000190000	0000	01	fd	fcfa
+# 74000190000	0000	03	fb	fcfa
+# 75000190000	0000	03	f7	fcfa
+# 76000190000	0000	03	ef	fcfa
+# 77000190000	0000	03	df	fcfa
+# 78000190000	0000	03	bf	fcfa
+# 79000190000	0000	03	7f	fcfa
+# 80000190000	0000	63	fe	fcfa
+# 81000190000	0000	01	fd	fcfa
+# 82000190000	0000	03	fb	fcfa
+# 83000190000	0000	03	f7	fcfa
+# 84000190000	0000	03	ef	fcfa
+# 85000190000	0000	03	df	fcfa
+# 86000190000	0000	03	bf	fcfa
+# 87000190000	0000	03	7f	fcfa
+# 88000190000	0000	63	fe	fcfa
+# 89000190000	0000	01	fd	fcfa
+# 90000190000	0000	03	fb	fcfa
+# 91000190000	0000	03	f7	fcfa
+# 92000190000	0000	03	ef	fcfa
+# 93000190000	0000	03	df	fcfa
+# 94000190000	0000	03	bf	fcfa
+# 95000190000	0000	03	7f	fcfa
+# 96000190000	0000	63	fe	fcfa
+# 97000190000	0000	01	fd	fcfa
+# 98000190000	0000	03	fb	fcfa
+# 99000190000	0000	03	f7	fcfa
+# 100000190000	0000	03	ef	fcfa
+# 101000190000	0000	03	df	fcfa
+# 102000190000	0000	03	bf	fcfa
+# 103000190000	0000	03	7f	fcfa
+# 104000190000	0000	63	fe	fcfa
+# 105000190000	0000	01	fd	fcfa
+# 106000190000	0000	03	fb	fcfa
+# 107000190000	0000	03	f7	fcfa
+# 108000190000	0000	03	ef	fcfa
+# 109000190000	0000	03	df	fcfa
+# 110000190000	0000	03	bf	fcfa
+# 111000190000	0000	03	7f	fcfa
+# 112000190000	0000	63	fe	fcfa
+# 113000190000	0000	01	fd	fcfa
+# 114000190000	0000	03	fb	fcfa
+# 115000190000	0000	03	f7	fcfa
+# 116000190000	0000	03	ef	fcfa
+# 117000190000	0000	03	df	fcfa
+# 118000190000	0000	03	bf	fcfa
+# 119000190000	0000	03	7f	fcfa
+# 120000190000	0000	63	fe	fcfa
+# 121000190000	0000	01	fd	fcfa
+# 122000190000	0000	03	fb	fcfa
+# 123000190000	0000	03	f7	fcfa
+# 124000190000	0000	03	ef	fcfa
+# 125000190000	0000	03	df	fcfa
+# 126000190000	0000	03	bf	fcfa
+# 127000190000	0000	03	7f	fcfa
+# 128000190000	0000	63	fe	fcfa
+# 129000190000	0000	01	fd	fcfa
+# 130000190000	0000	03	fb	fcfa
+# 131000190000	0000	03	f7	fcfa
+# 132000190000	0000	03	ef	fcfa
+# 133000190000	0000	03	df	fcfa
+# 134000190000	0000	03	bf	fcfa
+# 135000190000	0000	03	7f	fcfa
+# 136000190000	0000	63	fe	fcfa
+# 137000190000	0000	01	fd	fcfa
+# 138000190000	0000	03	fb	fcfa
+# 139000190000	0000	03	f7	fcfa
+# 140000190000	0000	03	ef	fcfa
+# 141000190000	0000	03	df	fcfa
+# 142000190000	0000	03	bf	fcfa
+# 143000190000	0000	03	7f	fcfa
+# 144000190000	0000	63	fe	fcfa
+# 145000190000	0000	01	fd	fcfa
+# 146000190000	0000	03	fb	fcfa
+# 147000190000	0000	03	f7	fcfa
+# 148000190000	0000	03	ef	fcfa
+# 149000190000	0000	03	df	fcfa
+# 150000190000	0000	03	bf	fcfa
+# 151000190000	0000	03	7f	fcfa
+# 152000190000	0000	63	fe	fcfa
+# 153000190000	0000	01	fd	fcfa
+# 154000190000	0000	03	fb	fcfa
+# 155000190000	0000	03	f7	fcfa
+# 156000190000	0000	03	ef	fcfa
+# 157000190000	0000	03	df	fcfa
+# 158000190000	0000	03	bf	fcfa
+# 159000190000	0000	03	7f	fcfa
+# 160000190000	0000	63	fe	fcfa
+# 161000190000	0000	01	fd	fcfa
+# 162000190000	0000	03	fb	fcfa
+# 163000190000	0000	03	f7	fcfa
+# 164000190000	0000	03	ef	fcfa
+# 165000190000	0000	03	df	fcfa
+# 166000190000	0000	03	bf	fcfa
+# 167000190000	0000	03	7f	fcfa
+# 168000190000	0000	63	fe	fcfa
+# 169000190000	0000	01	fd	fcfa
+# 170000190000	0000	03	fb	fcfa
+# 171000190000	0000	03	f7	fcfa
+# 172000190000	0000	03	ef	fcfa
+# 173000190000	0000	03	df	fcfa
+# 174000190000	0000	03	bf	fcfa
+# 175000190000	0000	03	7f	fcfa
+# 176000190000	0000	63	fe	fcfa
+# 177000190000	0000	01	fd	fcfa
+# 178000190000	0000	03	fb	fcfa
+# 179000190000	0000	03	f7	fcfa
+# 180000190000	0000	03	ef	fcfa
+# 181000190000	0000	03	df	fcfa
+# 182000190000	0000	03	bf	fcfa
+# 183000190000	0000	03	7f	fcfa
+# 184000190000	0000	63	fe	fcfa
+# 185000190000	0000	01	fd	fcfa
+# 186000190000	0000	03	fb	fcfa
+# 187000190000	0000	03	f7	fcfa
+# 188000190000	0000	03	ef	fcfa
+# 189000190000	0000	03	df	fcfa
+# 190000190000	0000	03	bf	fcfa
+# 191000190000	0000	03	7f	fcfa
+# 192000190000	0000	63	fe	fcfa
+# 193000190000	0000	01	fd	fcfa
+# 194000190000	0000	03	fb	fcfa
+# 195000190000	0000	03	f7	fcfa
+# 196000190000	0000	03	ef	fcfa
+# 197000190000	0000	03	df	fcfa
+# Break key hit
+# Simulation stop requested.
+# End time: 15:48:01 on Nov 19,2025, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 0

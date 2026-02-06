@@ -1,0 +1,22 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/fec_saylinx_board_top.v}
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/morr_l2.v}
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/root3.v}
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/mult.v}
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/seg_display_ctrl.v}
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/hex_to_7seg.v}
+
+vlog -vlog01compat -work work +incdir+C:/lab3 {C:/lab3/moore_tb1.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  moore_tb1
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,155 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/lab3/simulation/modelsim
+vfec_saylinx_board_top
+Z1 !s110 1763556445
+!i10b 1
+!s100 CQX@1Iag:9]_Chb574A@I3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IHiTOE6nPl^`KW1[ZBON740
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1763469955
+8C:/lab3/fec_saylinx_board_top.v
+FC:/lab3/fec_saylinx_board_top.v
+!i122 0
+L0 1 241
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1763556445.000000
+!s107 C:/lab3/fec_saylinx_board_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/fec_saylinx_board_top.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/lab3
+Z9 tCvgOpt 0
+vfec_saylinx_board_top_tb
+Z10 !s110 1763556446
+!i10b 1
+!s100 CbAeYA=WfBWPNKHNEI?K=1
+R2
+I1EVdU3CNT[dcC]hJhRCLK3
+R3
+R0
+w1763556023
+8C:/lab3/fec_saylinx_board_top_tb.v
+FC:/lab3/fec_saylinx_board_top_tb.v
+!i122 5
+L0 3 157
+R5
+r1
+!s85 0
+31
+Z11 !s108 1763556446.000000
+!s107 C:/lab3/fec_saylinx_board_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/fec_saylinx_board_top_tb.v|
+!i113 1
+R7
+R8
+R9
+vfunc
+R10
+!i10b 1
+!s100 ][D5n?<JFF@e?`ikLnloB1
+R2
+INjeS=m;@Y[9m]NLSF:E350
+R3
+R0
+R4
+8C:/lab3/func.v
+FC:/lab3/func.v
+!i122 4
+L0 1 85
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/lab3/func.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/func.v|
+!i113 1
+R7
+R8
+R9
+vhex_to_7seg
+R10
+!i10b 1
+!s100 FCg;1i2OWT[FG7[^^H:9E0
+R2
+In>AToX:W542Z_Ml27QE1=3
+R3
+R0
+R4
+8C:/lab3/hex_to_7seg.v
+FC:/lab3/hex_to_7seg.v
+!i122 3
+L0 2 36
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/lab3/hex_to_7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/hex_to_7seg.v|
+!i113 1
+R7
+R8
+R9
+vmult16x8
+R1
+!i10b 1
+!s100 g]W=Z88ooi=>oULF8bm?f1
+R2
+I?nG5:JUd?IZe[nQKbm4710
+R3
+R0
+R4
+8C:/lab3/mult.v
+FC:/lab3/mult.v
+!i122 2
+L0 1 58
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/mult.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/mult.v|
+!i113 1
+R7
+R8
+R9
+vseg_display_ctrl
+R1
+!i10b 1
+!s100 [5`HKjXTm40lJFokVNgcE3
+R2
+I][n]SHX`]nTz;71:EO1nF3
+R3
+R0
+R4
+8C:/lab3/seg_display_ctrl.v
+FC:/lab3/seg_display_ctrl.v
+!i122 1
+L0 2 82
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/seg_display_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/lab3|C:/lab3/seg_display_ctrl.v|
+!i113 1
+R7
+R8
+R9

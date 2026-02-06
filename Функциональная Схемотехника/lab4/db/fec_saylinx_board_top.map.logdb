@@ -1,0 +1,2 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,morr_l2:calc_unit|root3:root3_inst|lpm_mult:Mult0|mult_vct:auto_generated|mac_out2,

@@ -1,0 +1,143 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/lab3/simulation/modelsim
+vfec_saylinx_board_top
+Z1 !s110 1763556449
+!i10b 1
+!s100 kE^7TkJOT;VSkA6`4AO9M1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU7>]JjOef83fBI9E[;_@b2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1763469955
+8C:/lab3/fec_saylinx_board_top.v
+FC:/lab3/fec_saylinx_board_top.v
+!i122 0
+L0 1 241
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1763556449.000000
+!s107 C:/lab3/fec_saylinx_board_top.v|
+!s90 -reportprogress|300|C:/lab3/fec_saylinx_board_top.v|
+!i113 1
+Z7 tCvgOpt 0
+vfec_saylinx_board_top_tb
+!s110 1763556450
+!i10b 1
+!s100 RYMh4<Hmah8mTf]lRj;HF2
+R2
+I]UkF<Ii8KiV1K5`^5`IWk0
+R3
+R0
+w1763556023
+8C:/lab3/fec_saylinx_board_top_tb.v
+FC:/lab3/fec_saylinx_board_top_tb.v
+!i122 5
+L0 3 157
+R5
+r1
+!s85 0
+31
+!s108 1763556450.000000
+!s107 C:/lab3/fec_saylinx_board_top_tb.v|
+!s90 -reportprogress|300|C:/lab3/fec_saylinx_board_top_tb.v|
+!i113 1
+R7
+vfunc
+R1
+!i10b 1
+!s100 N>0DW[edoAn>Yi81<T?PF0
+R2
+IDi:3eP7lE7IN7QjC2_9`00
+R3
+R0
+R4
+8C:/lab3/func.v
+FC:/lab3/func.v
+!i122 4
+L0 1 85
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/func.v|
+!s90 -reportprogress|300|C:/lab3/func.v|
+!i113 1
+R7
+vhex_to_7seg
+R1
+!i10b 1
+!s100 `d>>mmjTUS;RTk@<G9<3I1
+R2
+IWQ`E]THDGIn=fDZ6`T=NA2
+R3
+R0
+R4
+8C:/lab3/hex_to_7seg.v
+FC:/lab3/hex_to_7seg.v
+!i122 2
+L0 2 36
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/hex_to_7seg.v|
+!s90 -reportprogress|300|C:/lab3/hex_to_7seg.v|
+!i113 1
+R7
+vmult16x8
+R1
+!i10b 1
+!s100 0W6b=2JlNm9O`<TJcQbJR3
+R2
+I[QaNEWg07k]C6gYcjb8X?1
+R3
+R0
+R4
+8C:/lab3/mult.v
+FC:/lab3/mult.v
+!i122 3
+L0 1 58
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/mult.v|
+!s90 -reportprogress|300|C:/lab3/mult.v|
+!i113 1
+R7
+vseg_display_ctrl
+R1
+!i10b 1
+!s100 8B=UVPAC]J99V^>z7j]>L2
+R2
+IlK?T_8<nO5@m1zkdiP`_X0
+R3
+R0
+R4
+8C:/lab3/seg_display_ctrl.v
+FC:/lab3/seg_display_ctrl.v
+!i122 1
+L0 2 82
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/lab3/seg_display_ctrl.v|
+!s90 -reportprogress|300|C:/lab3/seg_display_ctrl.v|
+!i113 1
+R7
