@@ -1,0 +1,1597 @@
+(export 
+  (version "D")
+  (design
+    (source "net-var.py")
+    (date "04/30/2026 08:25 PM")
+    (tool "SKiDL (2.2.3)")
+    (sheet
+      (number 1)
+      (name "/")
+      (tstamps "/")
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source "net-var.py")
+        (comment
+          (number "1")
+          (value ""))
+        (comment
+          (number "2")
+          (value ""))
+        (comment
+          (number "3")
+          (value ""))
+        (comment
+          (number "4")
+          (value ""))
+        (comment
+          (number "5")
+          (value ""))
+        (comment
+          (number "6")
+          (value ""))
+        (comment
+          (number "7")
+          (value ""))
+        (comment
+          (number "8")
+          (value ""))
+        (comment
+          (number "9")
+          (value "")))))
+  (components
+    (comp
+      (ref "P1")
+      (value "Conn_01x12")
+      (description "Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)")
+      (footprint "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical")
+      (fields
+        (field
+          (name "Description") "Generic connector, single row, 01x12, script generated (kicad-library-utils/schlib/autogen/connector/)")
+        (field
+          (name "Footprint") "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical")
+        (field
+          (name "Datasheet"))
+        (field
+          (name "SKiDL Tag") "nzLiX3VzvI")
+        (field
+          (name "SKiDL Line") "net-var.py:19"))
+      (libsource
+        (lib "Connector_Generic")
+        (part "Conn_01x12"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c6802c5a-e670-5823-8259-f2ccaa010f5d"))
+    (comp
+      (ref "U1")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "7yhsE1M1nT")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "df4fcb64-7f54-5d27-ba9b-2571d6360cf8"))
+    (comp
+      (ref "U10")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "ur02F2w7qT")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "c9c022b4-fd72-569d-bc21-e5e3968af82e"))
+    (comp
+      (ref "U11")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "2Xfkh9SxZ1")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "a3ad9ca3-45bf-5dd8-801d-49018a24088d"))
+    (comp
+      (ref "U12")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "3VMRhfPbod")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "10e1d632-1c6b-5e2b-a20c-a6c522a5cb4a"))
+    (comp
+      (ref "U13")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "n2GOkE6V6W")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "5bdd66e1-02dd-5b6e-bcd1-7f77528c5fd5"))
+    (comp
+      (ref "U14")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "lzzNuPYbOM")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6f9a77f2-4763-5eab-81ba-c796aa4d5d0d"))
+    (comp
+      (ref "U15")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "Ksf_g2Rehy")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "af518b15-5376-5dff-87b2-80f68134c3e0"))
+    (comp
+      (ref "U16")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "O_VHpRvm4j")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "94886d16-9f59-5fb8-8b94-aa2fe6395316"))
+    (comp
+      (ref "U17")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "qRWt4KsqN6")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6ba91372-6d2f-5214-8803-8d2ac3de8ba4"))
+    (comp
+      (ref "U18")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "LRvoxQLvn9")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "f701354b-c509-569c-bebf-a5d16a7699fd"))
+    (comp
+      (ref "U19")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "9jK_k1UT2G")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "43536369-93c1-5b2e-85ca-4005432204f2"))
+    (comp
+      (ref "U2")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "Nlh4ZfSaKj")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "bbbc3ef1-8429-54d6-9b6a-df8a9851f729"))
+    (comp
+      (ref "U3")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "MhXYyyPFw4")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "196b622c-adda-59df-b145-5c9b5d1d9382"))
+    (comp
+      (ref "U4")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "XD7MoYotsF")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "f769d8e6-8615-5636-a0c2-d4fc17d6e1c0"))
+    (comp
+      (ref "U5")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "xvgKBXYSf5")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "a5542f8a-a7e5-549f-8bc3-e7d092831d2c"))
+    (comp
+      (ref "U6")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "EHjnyRjUgR")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6b46b8b3-0806-5028-a514-37f72e1822b8"))
+    (comp
+      (ref "U7")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "IfglIXtERF")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "d5241c27-581c-58f4-9a7f-8c7c280f65af"))
+    (comp
+      (ref "U8")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "7rjL7utERI")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "61e72342-c743-555f-9eab-d776a486eadf"))
+    (comp
+      (ref "U9")
+      (value "DS8830")
+      (description "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+      (footprint "Package_DIP:DIP-14_W7.62mm")
+      (fields
+        (field
+          (name "Description") "Dual differential line driver and dual four-input NAND or dual four-input AND function, VDD +5V, DIP-14")
+        (field
+          (name "Footprint") "Package_DIP:DIP-14_W7.62mm")
+        (field
+          (name "Datasheet") "http://pdf1.alldatasheet.com/datasheet-pdf/view/8473/NSC/DS7830J.html")
+        (field
+          (name "SKiDL Tag") "yl8YEJsTN0")
+        (field
+          (name "SKiDL Line") "net-var.py:14"))
+      (libsource
+        (lib "Interface_LineDriver")
+        (part "DS8830"))
+      (sheetpath
+        (names "/")
+        (tstamps "/"))
+      (component_classes)
+      (tstamps "6faf00d4-b8eb-5a46-990c-632504d97002")))
+  (nets
+    (net
+      (code 1)
+      (name "GND")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "12")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U10")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U11")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U12")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U13")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U14")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U15")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U16")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U17")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U18")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U19")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U5")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U6")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U7")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U8")
+        (pin "7")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U9")
+        (pin "7")
+        (pintype "POWER-IN")))
+    (net
+      (code 2)
+      (name "VCC")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "11")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U10")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U11")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U12")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U13")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U14")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U15")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U16")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U17")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U18")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U19")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U2")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U3")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U4")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U5")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U6")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U7")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U8")
+        (pin "14")
+        (pintype "POWER-IN"))
+      (node
+        (ref "U9")
+        (pin "14")
+        (pintype "POWER-IN")))
+    (net
+      (code 3)
+      (name "net1")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "5")
+        (pintype "INPUT")))
+    (net
+      (code 4)
+      (name "net10")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "2")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U10")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U12")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "4")
+        (pintype "INPUT")))
+    (net
+      (code 5)
+      (name "net11")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "2")
+        (pintype "INPUT")))
+    (net
+      (code 6)
+      (name "net12")
+      (class "Default")
+      (node
+        (ref "U16")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U6")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 7)
+      (name "net13")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "8")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U11")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U7")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 8)
+      (name "net14")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U10")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 9)
+      (name "net15")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U13")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "5")
+        (pintype "INPUT")))
+    (net
+      (code 10)
+      (name "net16")
+      (class "Default")
+      (node
+        (ref "U14")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 11)
+      (name "net17")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "9")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 12)
+      (name "net18")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 13)
+      (name "net19")
+      (class "Default")
+      (node
+        (ref "U14")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 14)
+      (name "net2")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "7")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U15")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "5")
+        (pintype "INPUT")))
+    (net
+      (code 15)
+      (name "net20")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 16)
+      (name "net21")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "4")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U12")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U13")
+        (pin "3")
+        (pintype "INPUT")))
+    (net
+      (code 17)
+      (name "net22")
+      (class "Default")
+      (node
+        (ref "U11")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U12")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U9")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 18)
+      (name "net23")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "3")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U1")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U13")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 19)
+      (name "net24")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 20)
+      (name "net25")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 21)
+      (name "net26")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "6")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U16")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U6")
+        (pin "4")
+        (pintype "INPUT")))
+    (net
+      (code 22)
+      (name "net27")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U6")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 23)
+      (name "net28")
+      (class "Default")
+      (node
+        (ref "U14")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 24)
+      (name "net29")
+      (class "Default")
+      (node
+        (ref "U10")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U7")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 25)
+      (name "net3")
+      (class "Default")
+      (node
+        (ref "U19")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 26)
+      (name "net30")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "1")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U15")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "9")
+        (pintype "INPUT")))
+    (net
+      (code 27)
+      (name "net31")
+      (class "Default")
+      (node
+        (ref "U18")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "6")
+        (pintype "INPUT")))
+    (net
+      (code 28)
+      (name "net32")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U1")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U18")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 29)
+      (name "net33")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "4")
+        (pintype "INPUT")))
+    (net
+      (code 30)
+      (name "net34")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 31)
+      (name "net35")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "5")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U13")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "8")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 32)
+      (name "net36")
+      (class "Default")
+      (node
+        (ref "U1")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U11")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "5")
+        (pintype "INPUT")))
+    (net
+      (code 33)
+      (name "net37")
+      (class "Default")
+      (node
+        (ref "U17")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "11")
+        (pintype "INPUT")))
+    (net
+      (code 34)
+      (name "net38")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U9")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U9")
+        (pin "5")
+        (pintype "INPUT")))
+    (net
+      (code 35)
+      (name "net39")
+      (class "Default")
+      (node
+        (ref "U11")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "4")
+        (pintype "INPUT"))
+      (node
+        (ref "U6")
+        (pin "12")
+        (pintype "INPUT"))
+      (node
+        (ref "U7")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U9")
+        (pin "10")
+        (pintype "INPUT")))
+    (net
+      (code 36)
+      (name "net4")
+      (class "Default")
+      (node
+        (ref "U11")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U12")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "2")
+        (pintype "INPUT")))
+    (net
+      (code 37)
+      (name "net40")
+      (class "Default")
+      (node
+        (ref "P1")
+        (pin "10")
+        (pintype "PASSIVE"))
+      (node
+        (ref "U10")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U2")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U4")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U9")
+        (pin "12")
+        (pintype "INPUT")))
+    (net
+      (code 38)
+      (name "net5")
+      (class "Default")
+      (node
+        (ref "U16")
+        (pin "11")
+        (pintype "INPUT"))
+      (node
+        (ref "U8")
+        (pin "3")
+        (pintype "INPUT")))
+    (net
+      (code 39)
+      (name "net6")
+      (class "Default")
+      (node
+        (ref "U12")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "9")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "13")
+        (pintype "INPUT"))
+      (node
+        (ref "U6")
+        (pin "13")
+        (pintype "INPUT")))
+    (net
+      (code 40)
+      (name "net7")
+      (class "Default")
+      (node
+        (ref "U17")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U17")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "2")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "8")
+        (pintype "INPUT")))
+    (net
+      (code 41)
+      (name "net8")
+      (class "Default")
+      (node
+        (ref "U11")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U16")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "10")
+        (pintype "INPUT"))
+      (node
+        (ref "U5")
+        (pin "12")
+        (pintype "INPUT")))
+    (net
+      (code 42)
+      (name "net9")
+      (class "Default")
+      (node
+        (ref "U10")
+        (pin "5")
+        (pintype "INPUT"))
+      (node
+        (ref "U14")
+        (pin "3")
+        (pintype "INPUT"))
+      (node
+        (ref "U15")
+        (pin "1")
+        (pintype "INPUT"))
+      (node
+        (ref "U19")
+        (pin "6")
+        (pintype "INPUT"))
+      (node
+        (ref "U3")
+        (pin "4")
+        (pintype "INPUT")))))

@@ -1,0 +1,137 @@
+### Этап 0 - Крафт диска (в корне ~)
+
+sudo rm -r standby_data/ # Сносим папку standby
+
+sudo umount /mnt/pgdisk 2>/dev/null || true
+rm -f ~/pgdisk.img
+
+dd if=/dev/zero of=~/pgdisk.img bs=1M count=4096 status=progress
+
+mkfs.ext4 ~/pgdisk.img
+
+sudo mkdir -p /mnt/pgdisk
+
+sudo mount -o loop ~/pgdisk.img /mnt/pgdisk
+
+sudo mkdir -p /mnt/pgdisk/primary
+sudo chown -R 999:999 /mnt/pgdisk/primary
+
+df -h /mnt/pgdisk
+
+### Этап 1
+cd /mnt/c/Users/antip/OneDrive/Desktop/butwhy/РСХД/lab3
+
+sudo docker-compose up -d --build primary
+sudo docker-compose up -d --build standby
+
+sudo docker exec -d standby bash -c "/home/scripts/auto_promote.sh"
+sudo docker exec -it primary psql -U postgres -d losiento -c "SELECT * FROM employees;"
+sudo docker exec -it standby psql -U postgres -d losiento -c "SELECT * FROM employees;"
+sudo docker exec -it primary psql -U postgres -d losiento -c "INSERT INTO employees (full_name, department) VALUES ('Wooopa', 'IT');"
+sudo docker exec -it standby psql -U postgres -d losiento -c "INSERT INTO employees (full_name, department) VALUES ('Wooopa', 'IT');"
+
+sudo docker exec -it primary bash /home/scripts/read_client.sh
+sudo docker exec -it standby bash /home/scripts/read_client.sh
+
+### Этап 2 
+
+# Запуск клиента на запись
+docker exec -it primary bash /home/scripts/write_client.sh
+
+cd /mnt/c/Users/antip/OneDrive/Desktop/butwhy/РСХД/lab3
+
+sudo docker exec -it primary bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+sudo docker exec -it standby bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+
+sudo docker exec -it primary bash -lc "df -h /var/lib/postgresql/data"
+
+# Заполняем мусором 
+sudo docker exec -it primary bash -lc "mkdir -p /var/lib/postgresql/data/fill && dd if=/dev/zero of=/var/lib/postgresql/data/fill/junk.bin bs=16M status=progress"
+
+#failover делаем  standby -> primary
+sudo docker exec -it standby bash -lc "psql -U postgres -c 'SELECT pg_promote();'"
+
+# Проверяем
+sudo docker exec -it standby bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+sudo docker exec -it standby bash -lc "psql -U postgres -c 'SHOW transaction_read_only;'"
+
+### Этап 3 Восстанавливаем кластер
+
+sudo docker stop primary
+
+#Сносим папку
+sudo rm -rf /mnt/pgdisk/primary
+sudo mkdir -p /mnt/pgdisk/primary
+sudo chown -R 999:999 /mnt/pgdisk/primary
+
+sudo docker compose up -d --build primary # билдим заново ибо 
+
+
+# Делаем backup со standby
+sudo docker exec -it primary bash -lc "
+rm -rf /tmp/backup &&
+mkdir -p /tmp/backup &&
+chown -R postgres:postgres /tmp/backup
+"
+
+sudo docker exec -it primary bash -lc "
+su postgres -c '
+PGPASSWORD=123 \
+pg_basebackup -h standby \
+  -D /tmp/backup \
+  -U replicator \
+  -Fp -Xs -P -R
+'
+"
+
+# Вытаскиваем backup на хост 
+sudo rm -rf /tmp/primary_backup_copy
+sudo mkdir -p /tmp/primary_backup_copy
+sudo docker cp primary:/tmp/backup/. /tmp/primary_backup_copy/
+
+#Сносим primary
+sudo docker rm -f primary
+
+# Копируем backup на пустую директорию primary
+sudo cp -a /tmp/primary_backup_copy/. /mnt/pgdisk/primary/
+sudo chown -R 999:999 /mnt/pgdisk/primary
+
+# Билдим primary заново 
+sudo docker compose up -d --build primary
+
+# Возвращаем изначальные права 
+sudo docker stop standby
+sudo docker exec -it primary bash -lc "psql -U postgres -c 'SELECT pg_promote();'"
+sudo docker exec -it primary bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+
+# Удаляем standby
+sudo docker rm -f standby
+
+# Сносим
+sudo rm -rf /home/goga/standby_data/data
+sudo mkdir -p /home/goga/standby_data/data
+sudo chown -R 999:999 /home/goga/standby_data/data
+sudo chmod 700 /home/goga/standby_data/data
+
+
+# Backup на standby
+sudo docker compose run --rm standby bash
+
+su postgres -c "
+PGPASSWORD=123 \
+pg_basebackup -h primary \
+  -D /var/lib/postgresql/data \
+  -U replicator \
+  -Fp -Xs -P -R
+"
+sudo docker compose up -d standby
+
+
+# Проверяем что роли откатились 
+sudo docker exec -it primary bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+sudo docker exec -it standby bash -lc "psql -U postgres -c 'SELECT pg_is_in_recovery();'"
+
+
+# Проверяем наличие данных
+sudo docker exec -it standby psql -U postgres -d losiento -c "SELECT COUNT(*) FROM employees;"
+sudo docker exec -it primary psql -U postgres -d losiento -c "SELECT COUNT(*) FROM employees;"

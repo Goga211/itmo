@@ -1,0 +1,17 @@
+# Python virtual environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Editor history
+.history/

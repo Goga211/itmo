@@ -1,0 +1,192 @@
+=== Таска 1 ===
+
+# Создаем дириктории
+mkdir -p $HOME/pzl49
+mkdir -p $HOME/xvm38
+
+# Инициализируем дб с заданными параметрами
+initdb -D "$HOME/pzl49" \
+  --encoding=ISO8859-5 \
+  --locale=ru_RU.ISO8859-5 \
+  --lc-messages=ru_RU.ISO8859-5 \
+  --lc-monetary=ru_RU.ISO8859-5 \
+  --lc-numeric=ru_RU.ISO8859-5 \
+  --lc-time=ru_RU.ISO8859-5 \
+  --username=postgres1
+
+#Запускаем бд
+pg_ctl -D /var/db/postgres1/pzl49 -l $HOME/pzl49/server.log start
+
+
+=== Таска 2 ===
+# Конфигурируем, откуда сервер принимает подключения
+echo "listen_addresses = '*'" >> $HOME/pzl49/postgresql.conf
+echo "port = 9429" >> $HOME/pzl49/postgresql.conf
+echo "password_encryption = scram-sha-256" >> $HOME/pzl49/postgresql.conf
+
+# Задаем кто и как может подключаться
+cat > $HOME/pzl49/pg_hba.conf << EOF
+# TYPE  DATABASE  USER  ADDRESS         METHOD
+
+# Unix-domain socket (peer)
+local   all       all                   peer
+
+# TCP/IP
+host    all       all   0.0.0.0/0       scram-sha-256
+host    all       all   ::0/0           scram-sha-256
+EOF
+
+# Рестартим
+pg_ctl -D $HOME/pzl49 restart
+
+# Тестим коннекты
+psql -p 9429 postgres #конект через peer
+ALTER USER postgres1 WITH PASSWORD 'russianTrap'; # Задаем пароль
+SHOW password_encryption; # Проверяем что пароль в нужной нам кодировке
+
+
+# Конекты
+psql -p 9429 postgres # Без пароля
+psql -h 127.0.0.1 -p 9429 -U postgres1 postgres # С паролем
+psql -h pg147 -p 9429 -U postgres1 postgres
+
+# Конфиг
+
+ALTER SYSTEM SET max_connections = 200;
+
+ALTER SYSTEM SET shared_buffers = '256MB';
+ALTER SYSTEM SET temp_buffers = '8MB';
+ALTER SYSTEM SET work_mem = '4MB';
+ALTER SYSTEM SET effective_cache_size = '96GB';
+
+ALTER SYSTEM SET checkpoint_timeout = '10min';
+ALTER SYSTEM SET checkpoint_completion_target = 0.9;
+
+ALTER SYSTEM SET fsync = on;
+
+ALTER SYSTEM SET commit_delay = 100;
+ALTER SYSTEM SET commit_siblings = 5;
+
+ALTER SYSTEM SET wal_buffers = '16MB';
+
+ALTER SYSTEM SET log_destination = 'csvlog';
+ALTER SYSTEM SET logging_collector = on;
+ALTER SYSTEM SET log_min_messages = 'error';
+
+ALTER SYSTEM SET log_connections = off;
+ALTER SYSTEM SET log_disconnections = on;
+ALTER SYSTEM SET log_duration = on;
+
+pg_ctl -D $HOME/pzl49 restart
+
+# Проверка производительности
+createdb -h localhost -p 9429 test_db
+pgbench -h localhost -p 9429 -U postgres1 -i -s 100 test_db
+
+
+# TEST
+# 90 клиентов, а не 200, так как не хватает ресурсов на ВМ
+pgbench -h localhost -p 9429 -U postgres1 \
+  -c 90 -j 8 -T 600 \
+  -M prepared \
+  -P 1 -r \
+  --log --sampling-rate=1.0 \
+  test_db
+
+=== Таска 3 ===
+
+# Делаем директории для табличных пространств
+mkdir -p $HOME/wdu78
+mkdir -p $HOME/urx88
+mkdir -p $HOME/ybo76
+
+# Создаем от имени админа
+psql -h localhost -p 9429 -U postgres1 -d postgres -c \
+"CREATE TABLESPACE ts_wdu78 LOCATION '$HOME/wdu78';"
+
+psql -h localhost -p 9429 -U postgres1 -d postgres -c \
+"CREATE TABLESPACE ts_urx88 LOCATION '$HOME/urx88';"
+
+psql -h localhost -p 9429 -U postgres1 -d postgres -c \
+"CREATE TABLESPACE ts_ybo76 LOCATION '$HOME/ybo76';"
+
+# заходим в CLI
+psql -h localhost -p 9429 -U postgres1 -d postgres
+
+# Создание новой БД
+CREATE DATABASE tallblackroad
+TEMPLATE template0
+ENCODING 'ISO8859-5'
+LC_COLLATE 'ru_RU.ISO8859-5'
+LC_CTYPE 'ru_RU.ISO8859-5';
+
+# Создаем роль
+CREATE ROLE app_user LOGIN PASSWORD 'qwerty';
+
+GRANT CONNECT ON DATABASE tallblackroad TO app_user;
+
+# Подключаемся к новой базе
+\c tallblackroad
+
+GRANT USAGE ON SCHEMA public TO app_user;
+GRANT CREATE ON SCHEMA public TO app_user;
+
+# Выдаем права
+GRANT CREATE ON TABLESPACE ts_wdu78 TO app_user;
+GRANT CREATE ON TABLESPACE ts_urx88 TO app_user;
+GRANT CREATE ON TABLESPACE ts_ybo76 TO app_user;
+
+# Коннектимся под новой ролью
+psql -h localhost -p 9429 -U app_user -d tallblackroad
+
+# Делаем таблицы
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    full_name TEXT,
+    department TEXT
+) TABLESPACE ts_wdu78;
+
+CREATE TABLE projects (
+    id SERIAL PRIMARY KEY,
+    title TEXT,
+    budget INTEGER
+) TABLESPACE ts_urx88;
+
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    project_id INTEGER,
+    description TEXT,
+    status TEXT
+) TABLESPACE ts_ybo76;
+
+
+# Наполняем таблички
+INSERT INTO employees (full_name, department)
+SELECT
+    'Сотрудник ' || g,
+    (ARRAY['IT','HR','Sales','Finance'])[1 + (g % 4)]
+FROM generate_series(1, 200) g;
+
+INSERT INTO projects (title, budget)
+SELECT
+    'Проект ' || g,
+    g * 10000
+FROM generate_series(1, 100) g;
+
+INSERT INTO tasks (project_id, description, status)
+SELECT
+    1 + (g % 100),
+    'Задача номер ' || g,
+    (ARRAY['new','in_progress','done'])[1 + (g % 3)]
+FROM generate_series(1, 500) g;
+
+# Проверка табличных пространств
+SELECT spcname,
+       pg_tablespace_location(oid)
+FROM pg_tablespace;
+
+# Проверка объектов
+SELECT t.spcname, c.relname
+FROM pg_class c
+JOIN pg_tablespace t ON c.reltablespace = t.oid
+WHERE c.relkind = 'r';

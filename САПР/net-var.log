@@ -1,0 +1,51 @@
+WARNING: KICAD6_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap_external>:759=>C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap>:491]
+WARNING: KICAD7_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap_external>:759=>C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap>:491]
+WARNING: KICAD8_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap_external>:759=>C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap>:491]
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag 7yhsE1M1nT generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag Nlh4ZfSaKj generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag MhXYyyPFw4 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag XD7MoYotsF generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag xvgKBXYSf5 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag EHjnyRjUgR generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag IfglIXtERF generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag 7rjL7utERI generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag yl8YEJsTN0 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag ur02F2w7qT generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag 2Xfkh9SxZ1 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag 3VMRhfPbod generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag n2GOkE6V6W generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag lzzNuPYbOM generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag Ksf_g2Rehy generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag O_VHpRvm4j generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag qRWt4KsqN6 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag LRvoxQLvn9 generated for DS8830.
+WARNING: Missing tag on DS8830 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:14.
+WARNING: Random tag 9jK_k1UT2G generated for DS8830.
+WARNING: Missing tag on Conn_01x12 instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\net-var.py:19.
+WARNING: Random tag nzLiX3VzvI generated for Conn_01x12.
+WARNING: Missing tag on  instantiated at C:\Users\antip\OneDrive\Desktop\butwhy\ÑÀÏÐ\<frozen importlib._bootstrap>:491.
+INFO: 45 warnings found while generating netlist.
+INFO: 0 errors found while generating netlist.
+

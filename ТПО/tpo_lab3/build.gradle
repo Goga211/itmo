@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'ru.traphouse'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:6.0.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.41.0'
+    testImplementation 'io.github.cdimascio:java-dotenv:5.2.2'
+}
+
+test {
+    useJUnitPlatform()
+}

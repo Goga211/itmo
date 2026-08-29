@@ -1,0 +1,178 @@
+2026-04-10 17:26:05,537 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-04-10 17:26:05,579 INFO o.a.j.JMeter: Loading user properties from: C:\Users\antip\OneDrive\Desktop\apache-jmeter-5.6.3\bin\user.properties
+2026-04-10 17:26:05,580 INFO o.a.j.JMeter: Loading system properties from: C:\Users\antip\OneDrive\Desktop\apache-jmeter-5.6.3\bin\system.properties
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: Version 5.6.3
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: java.version=21.0.10
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: os.name=Windows 11
+2026-04-10 17:26:05,590 INFO o.a.j.JMeter: os.arch=amd64
+2026-04-10 17:26:05,591 INFO o.a.j.JMeter: os.version=10.0
+2026-04-10 17:26:05,591 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-04-10 17:26:05,591 INFO o.a.j.JMeter: java.awt.headless=true
+2026-04-10 17:26:05,591 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-04-10 17:26:05,591 INFO o.a.j.JMeter: Available Processors =16
+2026-04-10 17:26:05,601 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-04-10 17:26:05,601 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-04-10 17:26:05,601 INFO o.a.j.JMeter: JMeterHome=C:\Users\antip\OneDrive\Desktop\apache-jmeter-5.6.3
+2026-04-10 17:26:05,601 INFO o.a.j.JMeter: user.dir  =C:\Users\antip\OneDrive\Desktop\butwhy\ТПО\4lab\stress_testing
+2026-04-10 17:26:05,609 INFO o.a.j.JMeter: PWD       =C:\Users\antip\OneDrive\Desktop\butwhy\ТПО\4lab\stress_testing
+2026-04-10 17:26:05,609 INFO o.a.j.JMeter: IP: 192.168.13.70 Name: goga FullName: 192.168.13.70
+2026-04-10 17:26:05,650 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\antip\OneDrive\Desktop\butwhy\ТПО\4lab\stress_testing\.\report'
+2026-04-10 17:26:05,650 INFO o.a.j.s.FileServer: Default base='C:\Users\antip\OneDrive\Desktop\butwhy\ТПО\4lab\stress_testing'
+2026-04-10 17:26:05,658 INFO o.a.j.s.FileServer: Set new base='C:\Users\antip\OneDrive\Desktop\butwhy\ТПО\4lab\stress_testing\.'
+2026-04-10 17:26:05,977 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-04-10 17:26:06,018 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-04-10 17:26:06,026 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-04-10 17:26:06,034 INFO o.a.j.s.SaveService: Loading file: .\HTTP Request.jmx
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-04-10 17:26:06,110 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-04-10 17:26:06,158 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-04-10 17:26:06,160 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-04-10 17:26:06,160 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: .\result.csv
+2026-04-10 17:26:06,160 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\antip\OneDrive\Desktop\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-04-10 17:26:06,168 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-04-10 17:26:06,168 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-04-10 17:26:06,177 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-04-10 17:26:06,185 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-04-10 17:26:06,224 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-04-10 17:26:06,227 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-10 17:26:06,227 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-04-10 17:26:06,243 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-04-10 17:26:06,243 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-04-10 17:26:06,366 INFO o.a.j.JMeter: Running test (1775831166366)
+2026-04-10 17:26:06,388 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Stress test
+2026-04-10 17:26:06,388 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group Stress test.
+2026-04-10 17:26:06,390 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-04-10 17:26:06,390 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=30 ramp-up=30 delayedStart=false
+2026-04-10 17:26:06,399 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-1
+2026-04-10 17:26:06,408 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-04-10 17:26:06,408 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-04-10 17:26:06,473 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = goga
+2026-04-10 17:26:06,481 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-04-10 17:26:06,490 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-04-10 17:26:06,490 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-04-10 17:26:06,490 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-04-10 17:26:06,490 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-04-10 17:26:07,415 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-2
+2026-04-10 17:26:08,401 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-3
+2026-04-10 17:26:09,392 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-4
+2026-04-10 17:26:10,392 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-5
+2026-04-10 17:26:11,392 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-6
+2026-04-10 17:26:12,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-7
+2026-04-10 17:26:13,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-8
+2026-04-10 17:26:14,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-9
+2026-04-10 17:26:15,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-10
+2026-04-10 17:26:16,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-11
+2026-04-10 17:26:17,392 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-12
+2026-04-10 17:26:18,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-13
+2026-04-10 17:26:19,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-14
+2026-04-10 17:26:20,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-15
+2026-04-10 17:26:21,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-16
+2026-04-10 17:26:22,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-17
+2026-04-10 17:26:23,398 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-18
+2026-04-10 17:26:24,399 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-19
+2026-04-10 17:26:25,393 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-20
+2026-04-10 17:26:26,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-21
+2026-04-10 17:26:27,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-22
+2026-04-10 17:26:28,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-23
+2026-04-10 17:26:29,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-24
+2026-04-10 17:26:30,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-25
+2026-04-10 17:26:30,964 INFO o.a.j.r.Summariser: summary +    109 in 00:00:25 =    4.4/s Avg:   547 Min:   510 Max:   602 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+2026-04-10 17:26:31,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-26
+2026-04-10 17:26:32,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-27
+2026-04-10 17:26:33,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-28
+2026-04-10 17:26:34,390 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-29
+2026-04-10 17:26:35,391 INFO o.a.j.t.JMeterThread: Thread started: Stress test 1-30
+2026-04-10 17:27:00,001 INFO o.a.j.r.Summariser: summary +    289 in 00:00:29 =   10.0/s Avg:   602 Min:   566 Max:   639 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:27:00,002 INFO o.a.j.r.Summariser: summary =    398 in 00:00:54 =    7.4/s Avg:   587 Min:   510 Max:   639 Err:     0 (0.00%)
+2026-04-10 17:27:30,000 INFO o.a.j.r.Summariser: summary +    304 in 00:00:30 =   10.1/s Avg:   618 Min:   596 Max:   714 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:27:30,000 INFO o.a.j.r.Summariser: summary =    702 in 00:01:24 =    8.4/s Avg:   600 Min:   510 Max:   714 Err:     0 (0.00%)
+2026-04-10 17:28:00,064 INFO o.a.j.r.Summariser: summary +    294 in 00:00:30 =    9.8/s Avg:   633 Min:   595 Max:   732 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:28:00,066 INFO o.a.j.r.Summariser: summary =    996 in 00:01:54 =    8.8/s Avg:   610 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:28:30,014 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   625 Min:   595 Max:   712 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:28:30,014 INFO o.a.j.r.Summariser: summary =   1296 in 00:02:24 =    9.0/s Avg:   613 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:29:00,003 INFO o.a.j.r.Summariser: summary +    308 in 00:00:30 =   10.3/s Avg:   607 Min:   596 Max:   661 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:29:00,003 INFO o.a.j.r.Summariser: summary =   1604 in 00:02:54 =    9.2/s Avg:   612 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:29:30,001 INFO o.a.j.r.Summariser: summary +    299 in 00:00:30 =   10.0/s Avg:   602 Min:   596 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:29:30,001 INFO o.a.j.r.Summariser: summary =   1903 in 00:03:24 =    9.3/s Avg:   611 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:30:00,001 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   602 Min:   596 Max:   614 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:30:00,002 INFO o.a.j.r.Summariser: summary =   2203 in 00:03:54 =    9.4/s Avg:   609 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:30:30,001 INFO o.a.j.r.Summariser: summary +    295 in 00:00:30 =    9.8/s Avg:   602 Min:   593 Max:   613 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:30:30,002 INFO o.a.j.r.Summariser: summary =   2498 in 00:04:24 =    9.5/s Avg:   609 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:31:00,003 INFO o.a.j.r.Summariser: summary +    298 in 00:00:30 =    9.9/s Avg:   602 Min:   592 Max:   616 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:31:00,004 INFO o.a.j.r.Summariser: summary =   2796 in 00:04:54 =    9.5/s Avg:   608 Min:   510 Max:   732 Err:     0 (0.00%)
+2026-04-10 17:31:30,007 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   640 Min:   591 Max:  1649 Err:    10 (3.33%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:31:30,008 INFO o.a.j.r.Summariser: summary =   3096 in 00:05:24 =    9.6/s Avg:   611 Min:   510 Max:  1649 Err:    10 (0.32%)
+2026-04-10 17:32:00,002 INFO o.a.j.r.Summariser: summary +    303 in 00:00:30 =   10.1/s Avg:   604 Min:   592 Max:   617 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:32:00,002 INFO o.a.j.r.Summariser: summary =   3399 in 00:05:54 =    9.6/s Avg:   610 Min:   510 Max:  1649 Err:    10 (0.29%)
+2026-04-10 17:32:30,001 INFO o.a.j.r.Summariser: summary +    303 in 00:00:30 =   10.1/s Avg:   606 Min:   595 Max:   692 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:32:30,002 INFO o.a.j.r.Summariser: summary =   3702 in 00:06:24 =    9.6/s Avg:   610 Min:   510 Max:  1649 Err:    10 (0.27%)
+2026-04-10 17:33:00,001 INFO o.a.j.r.Summariser: summary +    302 in 00:00:30 =   10.1/s Avg:   608 Min:   594 Max:   777 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:33:00,002 INFO o.a.j.r.Summariser: summary =   4004 in 00:06:54 =    9.7/s Avg:   610 Min:   510 Max:  1649 Err:    10 (0.25%)
+2026-04-10 17:33:30,001 INFO o.a.j.r.Summariser: summary +    299 in 00:00:30 =   10.0/s Avg:   603 Min:   594 Max:   617 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:33:30,002 INFO o.a.j.r.Summariser: summary =   4303 in 00:07:24 =    9.7/s Avg:   609 Min:   510 Max:  1649 Err:    10 (0.23%)
+2026-04-10 17:34:00,002 INFO o.a.j.r.Summariser: summary +    298 in 00:00:30 =    9.9/s Avg:   602 Min:   595 Max:   611 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:34:00,002 INFO o.a.j.r.Summariser: summary =   4601 in 00:07:54 =    9.7/s Avg:   609 Min:   510 Max:  1649 Err:    10 (0.22%)
+2026-04-10 17:34:30,005 INFO o.a.j.r.Summariser: summary +    303 in 00:00:30 =   10.1/s Avg:   603 Min:   595 Max:   613 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:34:30,006 INFO o.a.j.r.Summariser: summary =   4904 in 00:08:24 =    9.7/s Avg:   608 Min:   510 Max:  1649 Err:    10 (0.20%)
+2026-04-10 17:35:00,000 INFO o.a.j.r.Summariser: summary +    296 in 00:00:30 =    9.9/s Avg:   602 Min:   595 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:35:00,000 INFO o.a.j.r.Summariser: summary =   5200 in 00:08:54 =    9.7/s Avg:   608 Min:   510 Max:  1649 Err:    10 (0.19%)
+2026-04-10 17:35:30,000 INFO o.a.j.r.Summariser: summary +    303 in 00:00:30 =   10.1/s Avg:   602 Min:   594 Max:   613 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:35:30,002 INFO o.a.j.r.Summariser: summary =   5503 in 00:09:24 =    9.8/s Avg:   608 Min:   510 Max:  1649 Err:    10 (0.18%)
+2026-04-10 17:36:00,002 INFO o.a.j.r.Summariser: summary +    301 in 00:00:30 =   10.0/s Avg:   602 Min:   596 Max:   610 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:36:00,004 INFO o.a.j.r.Summariser: summary =   5804 in 00:09:54 =    9.8/s Avg:   608 Min:   510 Max:  1649 Err:    10 (0.17%)
+2026-04-10 17:36:30,001 INFO o.a.j.r.Summariser: summary +    299 in 00:00:30 =   10.0/s Avg:   602 Min:   595 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:36:30,001 INFO o.a.j.r.Summariser: summary =   6103 in 00:10:24 =    9.8/s Avg:   607 Min:   510 Max:  1649 Err:    10 (0.16%)
+2026-04-10 17:37:00,002 INFO o.a.j.r.Summariser: summary +    301 in 00:00:30 =   10.0/s Avg:   602 Min:   594 Max:   613 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:37:00,003 INFO o.a.j.r.Summariser: summary =   6404 in 00:10:54 =    9.8/s Avg:   607 Min:   510 Max:  1649 Err:    10 (0.16%)
+2026-04-10 17:37:30,002 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   603 Min:   595 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:37:30,003 INFO o.a.j.r.Summariser: summary =   6704 in 00:11:24 =    9.8/s Avg:   607 Min:   510 Max:  1649 Err:    10 (0.15%)
+2026-04-10 17:38:00,002 INFO o.a.j.r.Summariser: summary +    297 in 00:00:30 =    9.9/s Avg:   602 Min:   595 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:38:00,002 INFO o.a.j.r.Summariser: summary =   7001 in 00:11:54 =    9.8/s Avg:   607 Min:   510 Max:  1649 Err:    10 (0.14%)
+2026-04-10 17:38:30,001 INFO o.a.j.r.Summariser: summary +    303 in 00:00:30 =   10.1/s Avg:   602 Min:   597 Max:   611 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:38:30,001 INFO o.a.j.r.Summariser: summary =   7304 in 00:12:24 =    9.8/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.14%)
+2026-04-10 17:39:00,002 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   603 Min:   595 Max:   625 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:39:00,002 INFO o.a.j.r.Summariser: summary =   7604 in 00:12:54 =    9.8/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.13%)
+2026-04-10 17:39:30,001 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   602 Min:   596 Max:   611 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:39:30,002 INFO o.a.j.r.Summariser: summary =   7904 in 00:13:24 =    9.8/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.13%)
+2026-04-10 17:40:00,002 INFO o.a.j.r.Summariser: summary +    299 in 00:00:30 =   10.0/s Avg:   602 Min:   594 Max:   613 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:40:00,002 INFO o.a.j.r.Summariser: summary =   8203 in 00:13:54 =    9.8/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.12%)
+2026-04-10 17:40:30,001 INFO o.a.j.r.Summariser: summary +    301 in 00:00:30 =   10.0/s Avg:   602 Min:   596 Max:   611 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:40:30,002 INFO o.a.j.r.Summariser: summary =   8504 in 00:14:24 =    9.8/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.12%)
+2026-04-10 17:41:00,001 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   602 Min:   594 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:41:00,002 INFO o.a.j.r.Summariser: summary =   8804 in 00:14:54 =    9.9/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.11%)
+2026-04-10 17:41:30,003 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   602 Min:   594 Max:   612 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:41:30,003 INFO o.a.j.r.Summariser: summary =   9104 in 00:15:24 =    9.9/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.11%)
+2026-04-10 17:42:00,002 INFO o.a.j.r.Summariser: summary +    300 in 00:00:30 =   10.0/s Avg:   603 Min:   597 Max:   683 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:42:00,002 INFO o.a.j.r.Summariser: summary =   9404 in 00:15:54 =    9.9/s Avg:   606 Min:   510 Max:  1649 Err:    10 (0.11%)
+2026-04-10 17:42:30,001 INFO o.a.j.r.Summariser: summary +    297 in 00:00:30 =    9.9/s Avg:   602 Min:   595 Max:   611 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-04-10 17:42:30,002 INFO o.a.j.r.Summariser: summary =   9701 in 00:16:24 =    9.9/s Avg:   605 Min:   510 Max:  1649 Err:    10 (0.10%)
+2026-04-10 17:42:48,607 INFO o.a.j.r.ResultCollector: Shutdown hook started
+2026-04-10 17:42:48,608 INFO o.a.j.r.ResultCollector: Shutdown hook ended
