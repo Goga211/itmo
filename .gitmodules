@@ -1,0 +1,16 @@
+[submodule "Высокопроизводительные системы/lab1"]
+	path = Высокопроизводительные системы/lab1
+	url = https://github.com/Goga211/highload-lab1.git
+	branch = main
+[submodule "Высокопроизводительные системы/lab2"]
+	path = Высокопроизводительные системы/lab2
+	url = https://github.com/Goga211/highload-lab2.git
+	branch = main
+[submodule "Высокопроизводительные системы/lab3"]
+	path = Высокопроизводительные системы/lab3
+	url = https://github.com/Goga211/highload-lab3.git
+	branch = main
+[submodule "Высокопроизводительные системы/lab4"]
+	path = Высокопроизводительные системы/lab4
+	url = https://github.com/Goga211/highload-lab4.git
+	branch = main
